@@ -65,8 +65,10 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+          	 	<div class="top-right links">
+				 <a class="nav-link" href="/employee">{{ __('Employees') }}</a>  
             @if (Route::has('login'))
-                <div class="top-right links">
+               
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
